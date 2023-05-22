@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Data.SqlClient;
+using System.Drawing;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace DB_Practice
+{
+    public partial class WebForm1 : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btn1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["RegiConnectionString"].ConnectionString);
+                conn.Open();
+                string insertQuery = "insert into demo(firstname,lastname,username,password) values (@firstname,@lastname,@username,@password) ";
+                SqlCommand cmd = new SqlCommand(insertQuery, conn);
+                cmd.Parameters.AddWithValue("@firstname", tb1.Text);
+                cmd.Parameters.AddWithValue("@lastname", tb2.Text);
+                cmd.Parameters.AddWithValue("@username", tb3.Text);
+                cmd.Parameters.AddWithValue("@password", tb4.Text);
+                cmd.ExecuteNonQuery();
+                Response.Write("Successful");
+                conn.Close();
+            }
+            catch(Exception ex)
+            {
+                Response.Write(ex.ToString());
+            }
+        }
+    }
+}
