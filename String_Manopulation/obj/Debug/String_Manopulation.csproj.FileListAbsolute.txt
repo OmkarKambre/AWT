@@ -1,0 +1,8 @@
+C:\AWT\String_Manopulation\bin\Debug\String_Manopulation.exe.config
+C:\AWT\String_Manopulation\bin\Debug\String_Manopulation.exe
+C:\AWT\String_Manopulation\bin\Debug\String_Manopulation.pdb
+C:\AWT\String_Manopulation\obj\Debug\String_Manopulation.csproj.AssemblyReference.cache
+C:\AWT\String_Manopulation\obj\Debug\String_Manopulation.csproj.SuggestedBindingRedirects.cache
+C:\AWT\String_Manopulation\obj\Debug\String_Manopulation.csproj.CoreCompileInputs.cache
+C:\AWT\String_Manopulation\obj\Debug\String_Manopulation.exe
+C:\AWT\String_Manopulation\obj\Debug\String_Manopulation.pdb
