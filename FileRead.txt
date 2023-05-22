@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace File_Read
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            FileStream fo = new FileStream("C:\\AWT\\demo.txt", FileMode.OpenOrCreate);
+            StreamReader sr = new StreamReader(fo);
+            string str1;
+            Console.WriteLine("File contents: ");
+            while((str1 = sr.ReadLine()) != null)
+            {
+                Console.WriteLine(str1);
+            }
+            sr.Close();
+            fo.Close();
+            Console.ReadKey();
+        }
+    }
+}
