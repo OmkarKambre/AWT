@@ -1,0 +1,8 @@
+C:\AWT\File_Read\bin\Debug\File_Read.exe.config
+C:\AWT\File_Read\bin\Debug\File_Read.exe
+C:\AWT\File_Read\bin\Debug\File_Read.pdb
+C:\AWT\File_Read\obj\Debug\File_Read.csproj.AssemblyReference.cache
+C:\AWT\File_Read\obj\Debug\File_Read.csproj.SuggestedBindingRedirects.cache
+C:\AWT\File_Read\obj\Debug\File_Read.csproj.CoreCompileInputs.cache
+C:\AWT\File_Read\obj\Debug\File_Read.exe
+C:\AWT\File_Read\obj\Debug\File_Read.pdb
