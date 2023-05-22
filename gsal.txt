@@ -1,0 +1,72 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace if_else
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter number of employees: ");
+            int n = Convert.ToInt32(Console.ReadLine());    
+            for(int i=0; i<n; i++)
+            {
+                Console.WriteLine("Enter the name of employee: ");
+                string name = Console.ReadLine();
+                Console.WriteLine("Enter Basic Salary: ");
+                float bsal = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Enter Level: ");
+                int level = Convert.ToInt32(Console.ReadLine());
+                int ca = 0;
+                int ea = 0;
+                switch(level)
+                {
+                    case 1:
+                        ca += 1000;
+                        ea += 500;
+                        break;
+                    case 2:
+                        ca += 750;
+                        ea += 200;
+                        break;
+                    case 3:
+                        ca += 500;
+                        ea += 100;
+                        break;
+                    case 4:
+                        ca += 250;
+                        ea += 100;
+                        break;
+                    deafult:
+                        Console.WriteLine("Invalid Choice");
+                        break;
+                }
+                float gsal = bsal + ca + ea + (bsal * 25 / 100);
+                Console.WriteLine("Gross Salary= " + gsal);
+                int tax = 0;
+                if (gsal <= 2000)
+                {
+                    tax = 0;
+                }
+                else if (gsal > 2000 && gsal <= 4000)
+                {
+                    tax = 3;
+                }
+                else if (gsal > 4000 && gsal <= 5000)
+                {
+                    tax = 5;
+                }
+                else if (gsal > 5000)
+                {
+                    tax = 8;
+                }
+                float netsal = gsal - (gsal * tax / 100);
+                Console.WriteLine("NetSalary= " + netsal);
+                Console.ReadKey();
+            }
+        }
+    }
+}
