@@ -1,0 +1,13 @@
+class:
+if (string.IsNullOrEmpty(str)) return false;
+            return char.IsUpper(str[0]);
+
+Main:
+ while(true)
+            {
+                Console.WriteLine("Enter the String: ");
+                string inp = Console.ReadLine();
+                if (string.IsNullOrEmpty(inp)) break;
+                Console.WriteLine($"Input:{inp}");
+                Console.WriteLine($"Begins with uppercase?{(inp. StartsWithUpper() ? "Yes":"No")}");
+            }
