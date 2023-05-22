@@ -1,0 +1,36 @@
+using System;
+
+class Person
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+
+    public void DisplayInfo()
+    {
+        Console.WriteLine("Name: " + Name);
+        Console.WriteLine("Age: " + Age);
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        // Creating an Array of Person Objects
+        Person[] people = new Person[3];
+
+        // Initializing the Array with Person Objects
+        people[0] = new Person { Name = "John", Age = 25 };
+        people[1] = new Person { Name = "Jane", Age = 30 };
+        people[2] = new Person { Name = "Mark", Age = 35 };
+
+        // Displaying Information of Each Person
+        foreach (Person person in people)
+        {
+            person.DisplayInfo();
+            Console.WriteLine();
+        }
+
+        Console.ReadLine();
+    }
+}
