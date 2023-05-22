@@ -1,0 +1,46 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+using System.Configuration;
+using System.Data;
+using System.Drawing;
+
+namespace grid_view
+{
+    public partial class WebForm1 : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btn1_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["RegiConnectionString"].ConnectionString);
+            /*SqlDataAdapter sde = new SqlDataAdapter("Select * from users", conn);
+            sde.Fill(ds);
+            GridView1.DataSource = ds;
+            GridView1.DataBind();*/
+            conn.Open();
+            string sql = "select * from users";
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                Console.WriteLine(sdr["name"]);
+                Response.Write(sdr["name"]);
+                Console.WriteLine(sdr["password"]);
+                Response.Write(sdr["password"]);
+                Console.WriteLine(sdr["city"]);
+                Response.Write(sdr["city"]);
+                
+            }
+            conn.Close();
+
+        }
+    }
+}
