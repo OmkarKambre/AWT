@@ -1,8 +1,0 @@
-C:\AWT\File_Handling\bin\Debug\File_Handling.exe.config
-C:\AWT\File_Handling\bin\Debug\File_Handling.exe
-C:\AWT\File_Handling\bin\Debug\File_Handling.pdb
-C:\AWT\File_Handling\obj\Debug\File_Handling.csproj.AssemblyReference.cache
-C:\AWT\File_Handling\obj\Debug\File_Handling.csproj.SuggestedBindingRedirects.cache
-C:\AWT\File_Handling\obj\Debug\File_Handling.csproj.CoreCompileInputs.cache
-C:\AWT\File_Handling\obj\Debug\File_Handling.exe
-C:\AWT\File_Handling\obj\Debug\File_Handling.pdb
