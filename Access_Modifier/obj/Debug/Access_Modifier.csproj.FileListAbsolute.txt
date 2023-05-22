@@ -1,8 +1,0 @@
-C:\AWT\Access_Modifier\bin\Debug\Access_Modifier.exe.config
-C:\AWT\Access_Modifier\bin\Debug\Access_Modifier.exe
-C:\AWT\Access_Modifier\bin\Debug\Access_Modifier.pdb
-C:\AWT\Access_Modifier\obj\Debug\Access_Modifier.csproj.AssemblyReference.cache
-C:\AWT\Access_Modifier\obj\Debug\Access_Modifier.csproj.SuggestedBindingRedirects.cache
-C:\AWT\Access_Modifier\obj\Debug\Access_Modifier.csproj.CoreCompileInputs.cache
-C:\AWT\Access_Modifier\obj\Debug\Access_Modifier.exe
-C:\AWT\Access_Modifier\obj\Debug\Access_Modifier.pdb
